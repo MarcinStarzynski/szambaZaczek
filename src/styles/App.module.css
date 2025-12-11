@@ -1,0 +1,86 @@
+.appContainer {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.mainCard {
+  background: rgba(245, 245, 245, 0.6);
+  padding: 0;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 8px 20px rgba(0, 0, 0, 0.3);
+  width: 75vw;
+  height: 75vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+}
+
+.mainContent {
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* Scrollbar styling (main content & textareas) */
+:global(.main-content) {
+  scrollbar-color: rgba(63, 170, 100, 0.5) transparent;
+  scrollbar-width: thin;
+}
+
+:global(.main-content::-webkit-scrollbar),
+:global(textarea::-webkit-scrollbar) {
+  width: 14px;
+  background: transparent;
+}
+
+:global(.main-content::-webkit-scrollbar-track),
+:global(textarea::-webkit-scrollbar-track) {
+  background: rgba(63, 170, 100, 0.15);
+  border-radius: 10px;
+  margin: 4px 0;
+}
+
+:global(.main-content::-webkit-scrollbar-thumb),
+:global(textarea::-webkit-scrollbar-thumb) {
+  background: rgba(63, 170, 100, 0.5);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+
+:global(.main-content::-webkit-scrollbar-thumb:hover),
+:global(textarea::-webkit-scrollbar-thumb:hover) {
+  background: rgba(63, 170, 100, 0.7);
+  background-clip: padding-box;
+}
+
+:global(.main-content::-webkit-scrollbar-button),
+:global(textarea::-webkit-scrollbar-button) {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+/* Hide scrollbar arrows globally (webkit) */
+:global(::-webkit-scrollbar-button),
+:global(*::-webkit-scrollbar-button) {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mainCard {
+    width: 95vw;
+    height: 90vh;
+  }
+
+  .mainContent {
+    padding: 24px;
+  }
+}

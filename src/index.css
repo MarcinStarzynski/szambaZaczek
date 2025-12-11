@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Betonowe tło - obraz */
+  background: url("/src/assets/beton.jpg") center/cover no-repeat fixed;
+  background-color: #b8bcc0;
+  position: relative;
+  min-height: 100vh;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}

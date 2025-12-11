@@ -1,0 +1,37 @@
+.contentSection h2 {
+  color: #3faa64;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #3faa64;
+}
+
+/* Offer List */
+.offerList {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.offerList li {
+  padding: 14px 20px;
+  margin-bottom: 12px;
+  background: linear-gradient(90deg, #f0f5f2 0%, #fafafa 100%);
+  border-left: 4px solid #3faa64;
+  border-radius: 4px;
+  color: #444;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.offerList li:hover {
+  transform: translateX(4px);
+  border-left-color: #3faa64;
+  background: linear-gradient(90deg, #e8f0ec 0%, #f5f5f5 100%);
+}
+
+@media (max-width: 768px) {
+  .contentSection h2 {
+    font-size: 24px;
+  }
+}

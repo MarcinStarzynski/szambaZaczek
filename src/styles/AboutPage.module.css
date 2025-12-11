@@ -1,0 +1,20 @@
+.contentSection h2 {
+  color: #3faa64;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #3faa64;
+}
+
+.contentSection p {
+  color: #555;
+  line-height: 1.8;
+  margin: 0 0 16px 0;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .contentSection h2 {
+    font-size: 24px;
+  }
+}

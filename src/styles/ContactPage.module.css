@@ -1,0 +1,115 @@
+.contentSection h2 {
+  color: #3faa64;
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #3faa64;
+}
+
+/* Contact Info */
+.contactInfo {
+  margin-top: 24px;
+}
+
+.contactInfo p {
+  padding: 12px 0;
+  border-bottom: 1px solid #e0e0e0;
+  color: #555;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.contactInfo p:last-child {
+  border-bottom: none;
+}
+
+.contactInfo strong {
+  color: #3faa64;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.contactForm {
+  margin-top: 28px;
+  padding-top: 20px;
+  border-top: 3px solid rgba(63, 170, 100, 1);
+}
+
+.contactForm {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.formInline {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.formRow label {
+  font-size: 14px;
+  color: #3faa64;
+  font-weight: 600;
+}
+
+.formRow input,
+.formRow textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 6px;
+  border: 1px solid #d0d7d4;
+  background: rgba(255, 255, 255, 0.85);
+  color: #333;
+  font-size: 15px;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.formRow input:focus,
+.formRow textarea:focus {
+  outline: none;
+  border-color: #3faa64;
+  box-shadow: 0 0 0 3px rgba(63, 170, 100, 0.2);
+  background: rgba(255, 255, 255, 0.95);
+}
+
+.submitBtn {
+  align-self: flex-start;
+  padding: 12px 22px;
+  background: #3faa64;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.submitBtn:hover {
+  background: #3faa64;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.submitBtn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+@media (max-width: 768px) {
+  .contentSection h2 {
+    font-size: 24px;
+  }
+
+  .formInline {
+    grid-template-columns: 1fr;
+  }
+}
